@@ -52,6 +52,39 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{# Header #}
+{%
+  set header_classes = [
+    page.header_left and page.header_right ? 'col-sm-6',
+    page.header_left and page.header_right is empty ? 'col-sm-9',
+    page.header_right and page.header_left is empty ? 'col-sm-9',
+    page.header_left is empty and page.header_right is empty ? 'col-sm-12'
+  ]
+%}
+<header id-"page-header">
+  {% if page.header_left %}
+    {% block header_left %}
+      <div class="header-left col-sm-3" role="heading">
+        {{ page.header_left }}
+      </div>
+    {% endblock %}
+  {% endif %}
+  {% if page.header_mid %}
+    {% block header_mid %}
+      <div class="header-mid {{ header_classes }}" role="heading">
+        {{ page.header_mid }}
+      </div>
+    {% endblock %}
+  {% endif %}
+  {% if page.header_right %}
+    {% block header_right %}
+      <div class="header-right col-sm-3" role="heading">
+        {{ page.header_right }}
+      </div>
+    {% endblock %}
+  {% endif %}
+</header>
+
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -62,39 +95,6 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    {# Header #}
-    {%
-      set header_classes = [
-        page.header_left and page.header_right ? 'col-sm-6',
-        page.header_left and page.header_right is empty ? 'col-sm-9',
-        page.header_right and page.header_left is empty ? 'col-sm-9',
-        page.header_left is empty and page.header_right is empty ? 'col-sm-12'
-      ]
-    %}
-    <header id-"page-header">
-      {% if page.header_left %}
-        {% block header_left %}
-          <div class="header-left col-sm-3" role="heading">
-            {{ page.header_left }}
-          </div>
-        {% endblock %}
-      {% endif %}
-      {% if page.header_mid %}
-        {% block header_mid %}
-          <div class="header-mid {{ header_classes }}" role="heading">
-            {{ page.header_mid }}
-          </div>
-        {% endblock %}
-      {% endif %}
-      {% if page.header_right %}
-        {% block header_right %}
-          <div class="header-right col-sm-3" role="heading">
-            {{ page.header_right }}
-          </div>
-        {% endblock %}
-      {% endif %}
-    </header>
-
     {# Navigation #}
     <nav{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}

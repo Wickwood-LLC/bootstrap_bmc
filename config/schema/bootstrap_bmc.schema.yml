@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the Bootstrap BMC theme.
+
+bootstrap_bmc.settings:
+  type: theme_settings
+  label: 'Bootstrap BMC settings'

@@ -16,6 +16,10 @@
 // jQuery UI style overrides.
 @import "drupal-bootstrap/jquery-ui/autocomplete";
 
+body {
+    background-color: #242440;
+}
+
 html, body {
     @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
@@ -77,12 +81,20 @@ ul {
   	margin-top: 0;
 }
 
+// Main Content
+.region-content {
+    background-color: #ffffff;
+    border: 4px solid #dfdfd3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 // Footer.
 .footer {
-	  margin-top: 45px;
-	  padding-top: 35px;
-	  padding-bottom: 36px;
-	  border-top: 1px solid #E5E5E5;
+    margin-top: 45px;
+    padding-top: 35px;
+    padding-bottom: 36px;
+    border-top: 1px solid #E5E5E5;
 }
 
 // Paragraphs.

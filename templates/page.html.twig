@@ -61,7 +61,7 @@
     page.header_left is empty and page.header_right is empty ? 'col-sm-12'
   ]
 %}
-<header id-"page-header">
+<header id="page-header" class="{{ container }}">
   {% if page.header_left %}
     {% block header_left %}
       <div class="header-left col-sm-3" role="heading">

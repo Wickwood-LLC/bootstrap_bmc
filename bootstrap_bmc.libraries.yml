@@ -6,6 +6,8 @@ framework:
       css/navbar.css: {}
   js:
     js/bootstrap-bmc.js: {}
+  dependencies:
+      - core/jquery
 
 # Uncomment for LESS source JavaScript files.
 #  js:

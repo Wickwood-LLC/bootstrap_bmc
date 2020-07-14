@@ -8066,6 +8066,7 @@ ul:last-child {
   letter-spacing: 12px;
   line-height: normal;
   font-weight: 400;
+  padding-bottom: 0;
   font-size: 22px;
   letter-spacing: 4px;
 }

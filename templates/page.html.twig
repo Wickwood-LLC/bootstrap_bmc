@@ -71,7 +71,7 @@
   {% endif %}
   {% if page.header_mid %}
     {% block header_mid %}
-      <div class="header-mid {{ header_classes }}" {{ attributes.addClass(header_classes) }} role="heading">
+      <div{{ attributes.addClass(header_classes) }}>
         {{ page.header_mid }}
       </div>
     {% endblock %}

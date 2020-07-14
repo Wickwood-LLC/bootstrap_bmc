@@ -1,4 +1,4 @@
-(function($) {
+(function ($, Drupal) {
     /**
      * Sticky header
      */
@@ -84,4 +84,4 @@
             });
         }
     };
-}(jQuery));
+})(jQuery, Drupal);

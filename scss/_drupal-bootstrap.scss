@@ -100,6 +100,15 @@ ul {
 
     #block-contactinfo {
       @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+      
+      a {
+        color: #dfdfd3;
+
+        &:hover {
+          color: #23527c;
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -160,7 +169,7 @@ ul {
   @include fluid-type(font-size, 320px, 760px, 22px, 44px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   @include fluid-type(letter-spacing, 320px, 760px, 4px, 10px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   
-  &:hover {
+  &:hover, &:focus {
     color: #dfdfd3;
     text-decoration: underline;
   }
@@ -332,7 +341,7 @@ nav.tabs {
         line-height: normal;
         font-weight: 300;
         
-        &:hover {
+        &:hover, &:focus {
           background-color: transparent;
           color: #dfdfd3;
           text-decoration: underline;

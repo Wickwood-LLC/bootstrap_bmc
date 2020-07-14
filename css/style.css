@@ -8004,6 +8004,15 @@ ul:last-child {
   }
 }
 
+#page-header .header-right #block-contactinfo a {
+  color: #dfdfd3;
+}
+
+#page-header .header-right #block-contactinfo a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
 @media (min-width: 992px) {
   #page-header {
     flex-flow: row nowrap;
@@ -8085,7 +8094,7 @@ ul:last-child {
   }
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover, .navbar-brand:focus {
   color: #dfdfd3;
   text-decoration: underline;
 }
@@ -8284,7 +8293,7 @@ nav.tabs {
   font-weight: 300;
 }
 
-#block-bootstrap-bmc-mainmenu-2 .nav li > a:hover {
+#block-bootstrap-bmc-mainmenu-2 .nav li > a:hover, #block-bootstrap-bmc-mainmenu-2 .nav li > a:focus {
   background-color: transparent;
   color: #dfdfd3;
   text-decoration: underline;

@@ -101,8 +101,11 @@ ul {
   font-weight: 400;
   @include fluid-type(font-size, 320px, 760px, 22px, 44px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   @include fluid-type(letter-spacing, 320px, 760px, 4px, 10px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
-
-
+  
+  &:hover {
+    color: #dfdfd3;
+    text-decoration: underline;
+  }
 
   @include breakpoint(992px 1199px){
     font-size: 1.5em;
@@ -121,7 +124,7 @@ ul {
   display: block;
   float: none;
   font-weight: 300;
-  margin: 15px;
+  margin: 0 0 15px 0 !important;
   @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 }
 
@@ -252,6 +255,116 @@ nav.tabs {
 }
 
 /****** MAIN MENU ******/
+#block-bootstrap-bmc-mainmenu-2 {
+  @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+  .nav {
+    li {
+      display: inline-block;
+
+      & + li {
+        margin-left: 0.5em;
+      }
+
+      > a {
+        padding: 0;
+        color: #dfdfd3;
+        
+        &:hover {
+          background-color: transparent;
+          color: #dfdfd3;
+          text-decoration: underline;
+        }
+      }
+
+      @include breakpoint(992px){
+        display: block;
+        float: none;
+
+        & + li {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &.sticky-menu {
+    position: fixed;
+    background: white;
+    border: 2px solid #dfdfd3;
+    color: #242341;
+    width: 205px;
+    left: -205px;
+    z-index: 50;
+    transition: position, 0.5s;
+    padding: 0.5em 1em;
+
+    a {
+      color: #242341;
+    }
+
+    ul.nav {
+      text-align: left;
+
+      li {
+        display: block;
+        
+        & + li {
+          margin: 0;
+        }
+
+        > a {
+          padding: 0.5em;
+
+          @include breakpoint(769px) {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      position: fixed;
+      left: 0;
+      box-shadow: 5px 5px 20px -3px #383838;
+
+      &:before {
+        opacity: 0;
+        transition: 0.5s;
+      }
+    }
+
+    &:before {
+      content: '\f0c9';
+      font-family: 'FontAwesome';
+      right: -41px;
+      width: 41px;
+      height: 41px;
+      line-height: 25px;
+      background: white;
+      padding: 0.5em;
+      box-sizing: border-box;
+      top: -2px;
+      position: absolute;
+      color: #242440;
+      box-shadow: 2px 2px 30px -3px #383838;
+      opacity: 1;
+      transition: all 1s ease 0.5s;
+    }
+
+    .pane-contact-info {
+      border-top: 1px solid;
+      font-size: 16px;
+      margin-top: 1em;
+      padding-top: 0.5em;
+      text-align: left;
+      @include fluid-type(font-size, 320px, 480px, 14px, 16px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+
+      .dot {
+        display: none;
+      }
+    }
+  }
+}
 
 #block-superfish-1 {
     position: static;

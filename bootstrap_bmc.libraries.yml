@@ -5,7 +5,7 @@ framework:
     navigation:
       css/navbar.css: {}
   js:
-    js/bootstrap_bmc.js: {}
+    js/bootstrap-bmc.js: {}
 
 # Uncomment for LESS source JavaScript files.
 #  js:

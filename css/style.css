@@ -7967,6 +7967,7 @@ ul:last-child {
 }
 
 #page-header {
+  display: flex;
   margin-top: 0;
   color: #dfdfd3;
   font-weight: 300;
@@ -8263,8 +8264,13 @@ nav.tabs {
   }
 }
 
+#block-bootstrap-bmc-mainmenu-2 .nav {
+  float: none;
+}
+
 #block-bootstrap-bmc-mainmenu-2 .nav li {
   display: inline-block;
+  float: none;
 }
 
 #block-bootstrap-bmc-mainmenu-2 .nav li + li {

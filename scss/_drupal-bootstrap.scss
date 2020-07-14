@@ -78,6 +78,7 @@ ul {
 
 // Page header.
 #page-header {
+  display: flex;
 	margin-top: 0;
   color: #dfdfd3;
   font-weight: 300;
@@ -315,8 +316,11 @@ nav.tabs {
 #block-bootstrap-bmc-mainmenu-2 {
   @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   .nav {
+    float: none;
+    
     li {
       display: inline-block;
+      float: none;
 
       & + li {
         margin-left: 0.5em;

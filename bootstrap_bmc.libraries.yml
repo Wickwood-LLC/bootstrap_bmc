@@ -4,6 +4,8 @@ framework:
       css/style.css: {}
     navigation:
       css/navbar.css: {}
+  js:
+    js/bootstrap_bmc.js: {}
 
 # Uncomment for LESS source JavaScript files.
 #  js:

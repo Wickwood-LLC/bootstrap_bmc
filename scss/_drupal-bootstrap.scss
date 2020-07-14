@@ -78,11 +78,67 @@ ul {
 
 // Page header.
 .page-header {
-  	margin-top: 0;
-    color: #dfdfd3;
-    font-weight: 300;
+	margin-top: 0;
+  color: #dfdfd3;
+  font-weight: 300;
+  flex-flow: row wrap;
+
+  > * {
+    flex: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-left {
+    order: 1;
+  }
+  .header-right {
+    br {
+      display: none;
+    }
+
+    #block-contactinfo {
+      @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+    }
+  }
+
+  @include breakpoint(992px){
+    flex-flow: row nowrap;
+    
+    .header-left {
+      order: 0;
+      text-align: left;
+      li {
+        display: block;
+
+        & + li {
+          margin-left: 0;
+        }
+      }
+    }
+    .header-right {
+      text-align: right;
+      br {
+        display: inline;
+      }
+    }
+    .header-left, .header-right {
+      flex: 0 1 190px;
+      padding: 0;
+    }
+    .header-mid {
+      flex: 3 1 50%;
+    }
+
+    span.dot {
+      display: none;
+    }
+  }
 }
 .header-mid {
+  text-align: center;
+  justify-content: center;
+  display: flex;
   text-align: center;
 }
 
@@ -98,6 +154,7 @@ ul {
   float: none;
   height: auto;
   letter-spacing: 12px;
+  line-height: normal;
   font-weight: 400;
   @include fluid-type(font-size, 320px, 760px, 22px, 44px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   @include fluid-type(letter-spacing, 320px, 760px, 4px, 10px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size

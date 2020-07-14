@@ -82,7 +82,18 @@ ul {
     color: #dfdfd3;
     font-weight: 300;
 }
+.header-mid {
+  text-align: center;
+}
+
+.logo{
+  float: none;
+  width: 100%;
+  display: block;
+}
+
 .navbar-brand {
+  display: block;
   float: none;
   letter-spacing: 12px;
   font-weight: 400;
@@ -104,6 +115,7 @@ ul {
   }
 }
 .navbar-text {
+  display: block;
   float: none;
   font-weight: 300;
   @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size

@@ -7972,7 +7972,18 @@ ul:last-child {
   font-weight: 300;
 }
 
+.header-mid {
+  text-align: center;
+}
+
+.logo {
+  float: none;
+  width: 100%;
+  display: block;
+}
+
 .navbar-brand {
+  display: block;
   float: none;
   letter-spacing: 12px;
   font-weight: 400;
@@ -8022,6 +8033,7 @@ ul:last-child {
 }
 
 .navbar-text {
+  display: block;
   float: none;
   font-weight: 300;
   font-size: 12px;

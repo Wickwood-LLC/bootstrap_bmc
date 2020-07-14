@@ -21,35 +21,35 @@ body {
 }
 
 html, body {
-    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h1, .h1 {
   font-weight: bold;
-  @include fluid-type(320px, 1200px, 24px, 40px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 24px, 40px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 h2, .h2 {
   font-weight: bold;
-  @include fluid-type(320px, 1200px, 22px, 36px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 22px, 36px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 h3, .h3 {
   font-weight: bold;
-  @include fluid-type(320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 h4, .h4 {
   font-weight: bold;
-  @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 h5, .h5 {
   font-weight: bold;
-  @include fluid-type(320px, 1200px, 17px, 22px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 17px, 22px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 h6, .h6 {
   font-weight: bold;
-  @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 p {
-    @include fluid-type(320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 ol,
@@ -79,14 +79,46 @@ ul {
 // Page header.
 .page-header {
   	margin-top: 0;
+    color: #dfdfd3;
+    font-weight: 300;
+}
+.navbar-brand {
+  float: none;
+  letter-spacing: 12px;
+  font-weight: 400;
+  @include fluid-type(font-size, 320px, 760px, 22px, 44px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+  @include fluid-type(letter-spacing, 320px, 760px, 4px, 10px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+
+
+
+  @include breakpoint(992px 1199px){
+    font-size: 1.5em;
+    letter-spacing: 6px;
+  }
+  @include breakpoint(1200px){
+    font-size: 2em;
+  }
+
+  a {
+    color: white;
+  }
+}
+.navbar-text {
+  float: none;
+  font-weight: 300;
+  @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 }
 
 // Main Content
 .region-content {
-    background-color: #ffffff;
-    border: 4px solid #dfdfd3;
-    border-radius: 10px;
-    padding: 20px;
+  background-color: #ffffff;
+  border: 4px solid #dfdfd3;
+  border-radius: 10px;
+  padding: 20px 0;
+
+  p:not([class]) {
+    text-align: justify;
+  }
 }
 
 // Footer.
@@ -127,6 +159,17 @@ p:last-child,
 	&:first-child {
 		margin-top: 0;
 	}
+}
+
+.messages__wrapper {
+  background-color: #ffffff;
+  border: 4px solid #dfdfd3;
+  border-radius: 10px;
+  padding: 1em;
+  color: initial;
+  margin-bottom: 1em;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 #navbar-collapse .navbar-nav {
@@ -558,7 +601,7 @@ nav.tabs {
     }
     h3.block-title {
         font-weight: bold;
-        @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type(font-size, 320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
     }
     .block-content {
         padding: 0.5em 1em 0 1em;
@@ -652,7 +695,7 @@ nav.tabs {
         color: unset;
         margin-top: 0;
         text-align: center;
-        @include fluid-type(320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+        @include fluid-type(font-size, 320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
     }
 }
 

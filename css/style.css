@@ -7075,7 +7075,6 @@ button.close {
   }
 }
 
-/* Fluid Typography */
 /**
  * Alert styling.
  */
@@ -7815,7 +7814,7 @@ html, body {
 
 @media screen and (min-width: 320px) {
   html, body {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
   }
 }
 
@@ -7827,15 +7826,12 @@ html, body {
 
 h1, .h1 {
   font-weight: bold;
-}
-
-h1, .h1 {
   font-size: 24px;
 }
 
 @media screen and (min-width: 320px) {
   h1, .h1 {
-    font-size: calc(24px + 16 * ((100vw - 320px) / 880));
+    font-size: calc(24px + 16 * (100vw - 320px) / 880);
   }
 }
 
@@ -7847,15 +7843,12 @@ h1, .h1 {
 
 h2, .h2 {
   font-weight: bold;
-}
-
-h2, .h2 {
   font-size: 22px;
 }
 
 @media screen and (min-width: 320px) {
   h2, .h2 {
-    font-size: calc(22px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(22px + 14 * (100vw - 320px) / 880);
   }
 }
 
@@ -7867,15 +7860,12 @@ h2, .h2 {
 
 h3, .h3 {
   font-weight: bold;
-}
-
-h3, .h3 {
   font-size: 20px;
 }
 
 @media screen and (min-width: 320px) {
   h3, .h3 {
-    font-size: calc(20px + 10 * ((100vw - 320px) / 880));
+    font-size: calc(20px + 10 * (100vw - 320px) / 880);
   }
 }
 
@@ -7887,15 +7877,12 @@ h3, .h3 {
 
 h4, .h4 {
   font-weight: bold;
-}
-
-h4, .h4 {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
   h4, .h4 {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 6 * (100vw - 320px) / 880);
   }
 }
 
@@ -7907,15 +7894,12 @@ h4, .h4 {
 
 h5, .h5 {
   font-weight: bold;
-}
-
-h5, .h5 {
   font-size: 17px;
 }
 
 @media screen and (min-width: 320px) {
   h5, .h5 {
-    font-size: calc(17px + 5 * ((100vw - 320px) / 880));
+    font-size: calc(17px + 5 * (100vw - 320px) / 880);
   }
 }
 
@@ -7927,15 +7911,12 @@ h5, .h5 {
 
 h6, .h6 {
   font-weight: bold;
-}
-
-h6, .h6 {
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
   h6, .h6 {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
   }
 }
 
@@ -7951,7 +7932,7 @@ p {
 
 @media screen and (min-width: 320px) {
   p {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
   }
 }
 
@@ -7987,13 +7968,86 @@ ul:last-child {
 
 .page-header {
   margin-top: 0;
+  color: #dfdfd3;
+  font-weight: 300;
+}
+
+.navbar-brand {
+  float: none;
+  letter-spacing: 12px;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar-brand {
+    font-size: calc(22px + 22 * (100vw - 320px) / 440);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .navbar-brand {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .navbar-brand {
+    letter-spacing: calc(4px + 6 * (100vw - 320px) / 440);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .navbar-brand {
+    letter-spacing: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    font-size: 1.5em;
+    letter-spacing: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 2em;
+  }
+}
+
+.navbar-brand a {
+  color: white;
+}
+
+.navbar-text {
+  float: none;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar-text {
+    font-size: calc(12px + 10 * (100vw - 320px) / 440);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .navbar-text {
+    font-size: 22px;
+  }
 }
 
 .region-content {
   background-color: #ffffff;
   border: 4px solid #dfdfd3;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.region-content p:not([class]) {
+  text-align: justify;
 }
 
 .footer {
@@ -8030,6 +8084,17 @@ p:last-child,
 .help-block:first-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
+}
+
+.messages__wrapper {
+  background-color: #ffffff;
+  border: 4px solid #dfdfd3;
+  border-radius: 10px;
+  padding: 1em;
+  color: initial;
+  margin-bottom: 1em;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 #navbar-collapse .navbar-nav li.dropdown:hover > ul.dropdown-menu {
@@ -8468,15 +8533,12 @@ nav.tabs {
 
 .boxed h3.block-title {
   font-weight: bold;
-}
-
-.boxed h3.block-title {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
   .boxed h3.block-title {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 6 * (100vw - 320px) / 880);
   }
 }
 
@@ -8577,15 +8639,12 @@ nav.tabs {
   color: unset;
   margin-top: 0;
   text-align: center;
-}
-
-.block-social-sharing-block .block-title {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
   .block-social-sharing-block .block-title {
-    font-size: calc(18px + 12 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 12 * (100vw - 320px) / 880);
   }
 }
 

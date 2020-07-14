@@ -7983,8 +7983,10 @@ ul:last-child {
 }
 
 .navbar-brand {
+  color: #dfdfd3;
   display: block;
   float: none;
+  height: auto;
   letter-spacing: 12px;
   font-weight: 400;
   font-size: 22px;
@@ -8033,9 +8035,11 @@ ul:last-child {
 }
 
 .navbar-text {
+  color: #dfdfd3;
   display: block;
   float: none;
   font-weight: 300;
+  margin: 15px;
   font-size: 12px;
 }
 
@@ -8096,17 +8100,6 @@ p:last-child,
 .help-block:first-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
-}
-
-.messages__wrapper {
-  background-color: #ffffff;
-  border: 4px solid #dfdfd3;
-  border-radius: 10px;
-  padding: 1em;
-  color: initial;
-  margin-bottom: 1em;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 #navbar-collapse .navbar-nav li.dropdown:hover > ul.dropdown-menu {

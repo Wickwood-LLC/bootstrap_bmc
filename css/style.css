@@ -8642,6 +8642,7 @@ nav.tabs {
   position: fixed;
   top: 150px;
   right: -302px;
+  left: unset;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 0;
@@ -8663,6 +8664,7 @@ nav.tabs {
 
 .block-social-sharing-block:hover, .block-social-sharing-block:focus, .block-social-sharing-block:active {
   right: 0;
+  left: unset;
   box-shadow: 2px 3px 10px 0 #333;
 }
 
@@ -8679,6 +8681,7 @@ nav.tabs {
   font-size: 24px;
   position: absolute;
   left: -36px;
+  right: unset;
   width: 36px;
   height: 36px;
   background-color: white;

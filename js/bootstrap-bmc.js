@@ -21,7 +21,7 @@
             $(window).on("resize mresize", sticky);
 
             function sticky() {
-                topSpacing = $('body').css('padding-top');
+                topSpacing = parseInt($('body').css('padding-top'));
                 menuHeight = $menu.outerHeight(); // gets the height of our menu
                 stickyTop = $contact.offset().top; // tells how far our target element is from the top of the page
                 windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page

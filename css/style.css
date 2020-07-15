@@ -8641,7 +8641,7 @@ nav.tabs {
 .block-social-sharing-block {
   position: fixed;
   top: 150px;
-  left: -302px;
+  right: -302px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 0;

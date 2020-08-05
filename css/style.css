@@ -7956,14 +7956,21 @@ ul:last-child {
 }
 
 figure {
-  display: table;
+  display: table !important;
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid black;
 }
 
 figure figcaption {
+  color: #777777;
   display: table-caption;
+  padding: 5px;
   caption-side: bottom;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid black;
+  border-top: 0px;
+  font-size: 0.9em;
+  line-height: normal;
 }
 
 .field--label:after {

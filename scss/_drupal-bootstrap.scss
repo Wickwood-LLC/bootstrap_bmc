@@ -222,6 +222,15 @@ ul {
   @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 }
 
+.page-title {
+  padding-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  font-weight: 500;
+}
+
 // Main Content
 .region-content {
   background-color: #ffffff;

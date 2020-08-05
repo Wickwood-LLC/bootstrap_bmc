@@ -74,6 +74,17 @@ ul {
   }
 }
 
+figure {
+  display: table;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid black;
+  
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+  }
+}
+
 .field--label:after {
   content: ':';
 }

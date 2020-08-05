@@ -243,6 +243,10 @@ ul {
   }
 }
 
+.content li + li {
+    margin-top: 1em;
+}
+
 // Footer.
 .footer {
   margin-top: 45px;

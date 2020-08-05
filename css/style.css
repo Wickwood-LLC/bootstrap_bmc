@@ -8162,6 +8162,10 @@ ul:last-child {
   text-align: justify;
 }
 
+.content li + li {
+  margin-top: 1em;
+}
+
 .footer {
   margin-top: 45px;
   padding-top: 35px;

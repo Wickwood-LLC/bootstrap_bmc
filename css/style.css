@@ -8743,6 +8743,34 @@ nav.tabs {
 }
 
 /********************* MAINTENANCE *********************/
+.maintenance-page #navbar {
+  background-color: transparent;
+  border: 0;
+}
+
+.maintenance-page .navbar-header {
+  float: none;
+  text-align: center;
+}
+
+.maintenance-page .navbar-brand,
+.maintenance-page .navbar-brand:hover {
+  color: #dfdfd3;
+  font-family: nimbus-sans-extended, sans-serif;
+}
+
+.maintenance-page .navbar-text {
+  color: #dfdfd3;
+}
+
+.maintenance-page .main-content {
+  background-color: #ffffff;
+  border: 4px solid #dfdfd3;
+  border-radius: 10px;
+  font-family: nimbus-sans, sans-serif;
+  padding: 20px 0;
+}
+
 .maintenance-page main {
   text-align: center;
   margin-top: 2em;

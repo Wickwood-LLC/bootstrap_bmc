@@ -820,16 +820,14 @@ nav.tabs {
   .navbar-text {
     color: #dfdfd3;
   }
-  .main-container {
+  main {
+    text-align: center;
+    margin-top: 2em;
     background-color: #ffffff;
     border: 4px solid #dfdfd3;
     border-radius: 10px;
     font-family: nimbus-sans, sans-serif;
     padding: 20px 0;
-  }
-  main {
-    text-align: center;
-    margin-top: 2em;
   }
 }
 

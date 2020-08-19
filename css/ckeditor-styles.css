@@ -265,10 +265,18 @@ a.wt-button:hover {
   text-decoration: none;
 }
 
+.fluid-columns,
 .fluid-columns-300 {
+  border: 5px solid #ddd;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.fluid-columns > * {
+  flex: 0 1 300px;
 }
 
 .fluid-columns-300 > * {

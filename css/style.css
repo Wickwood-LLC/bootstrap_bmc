@@ -8198,6 +8198,10 @@ figure figcaption {
   border-top: 1px solid #E5E5E5;
 }
 
+.footer p {
+  text-align: center;
+}
+
 .menu--footer > li {
   display: inline-block;
 }

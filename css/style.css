@@ -7931,6 +7931,7 @@ h6, .h6 {
 
 p {
   font-size: 16px;
+  text-align: left;
 }
 
 @media screen and (min-width: 320px) {
@@ -7971,6 +7972,10 @@ figure figcaption {
   border-top: 0px;
   font-size: 0.9em;
   line-height: normal;
+}
+
+.field--name-body h3 {
+  font-weight: normal;
 }
 
 .field--label:after {
@@ -8185,10 +8190,25 @@ figure figcaption {
 }
 
 .footer {
+  color: white;
+  text-align: center;
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
+}
+
+.menu--footer > li {
+  display: inline-block;
+}
+
+.menu--footer > li a {
+  color: white;
+}
+
+.menu--footer > li a.hover {
+  background: none;
+  text-decoration: underline;
 }
 
 p:last-child,

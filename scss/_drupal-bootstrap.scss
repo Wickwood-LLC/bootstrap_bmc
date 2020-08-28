@@ -63,6 +63,7 @@ h6,
 
 p {
   @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  text-align: left;
 }
 
 ol,
@@ -78,7 +79,7 @@ figure {
   display: table !important;
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid black;
-  
+
   figcaption {
     color: #333;
     display: table-caption;
@@ -89,6 +90,12 @@ figure {
     border-top: 0px;
     font-size: 0.9em;
     line-height: normal;
+  }
+}
+
+.field--name-body {
+  h3 {
+    font-weight: normal;
   }
 }
 
@@ -261,16 +268,32 @@ figure {
   }
 }
 
-.content li + li {
-    margin-top: 1em;
+.content li+li {
+  margin-top: 1em;
 }
 
 // Footer.
 .footer {
+  color: white;
+  text-align: center;
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
+}
+.menu--footer {
+  > li {
+    display: inline-block;
+    
+    a {
+      color: white;
+      
+      &.hover {
+        background: none;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 // Paragraphs.
@@ -808,18 +831,22 @@ nav.tabs {
     background-color: transparent;
     border: 0;
   }
+
   .navbar-header {
     float: none;
     text-align: center;
   }
+
   .navbar-brand,
   .navbar-brand:hover {
     color: #dfdfd3;
     font-family: nimbus-sans-extended, sans-serif;
   }
+
   .navbar-text {
     color: #dfdfd3;
   }
+
   main {
     text-align: center;
     margin-top: 2em;

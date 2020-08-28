@@ -8785,6 +8785,7 @@ nav.tabs {
 
 .maintenance-page .navbar-text {
   color: #dfdfd3;
+  text-align: center;
 }
 
 .maintenance-page main {

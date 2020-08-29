@@ -100,6 +100,10 @@ span.fa-ext {
   vertical-align: super;
   font-size: 50%;
 }
+span.fa-envelope-o {
+  font-size: medium;
+  margin-left: 0.2em;
+}
 
 .field--name-body {
   h3 {
@@ -279,6 +283,15 @@ span.fa-ext {
 
 .content li+li {
   margin-top: 1em;
+}
+
+.page-node-type-webform {
+  .block-field-blocknodewebformwebform {
+    border: 1px solid #242340;
+  }
+  .content li + li {
+    margin-top: 0;
+  }
 }
 
 // Footer.

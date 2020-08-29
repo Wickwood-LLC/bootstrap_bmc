@@ -63,7 +63,6 @@ h6,
 
 p {
   @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
-  text-align: left;
 }
 
 ol,
@@ -244,6 +243,7 @@ figure {
   float: none;
   font-weight: 300;
   margin: 0 0 15px 0 !important;
+  text-align: center;
   @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 }
 
@@ -264,7 +264,7 @@ figure {
   padding: 1.25em;
 
   p:not([class]) {
-    text-align: justify;
+    text-align: left;
   }
 }
 

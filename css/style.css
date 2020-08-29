@@ -7931,7 +7931,6 @@ h6, .h6 {
 
 p {
   font-size: 16px;
-  text-align: left;
 }
 
 @media screen and (min-width: 320px) {
@@ -8150,6 +8149,7 @@ figure figcaption {
   float: none;
   font-weight: 300;
   margin: 0 0 15px 0 !important;
+  text-align: center;
   font-size: 12px;
 }
 
@@ -8182,7 +8182,7 @@ figure figcaption {
 }
 
 .region-content p:not([class]) {
-  text-align: justify;
+  text-align: left;
 }
 
 .content li + li {

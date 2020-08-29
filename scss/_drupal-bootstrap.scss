@@ -28,19 +28,19 @@ body {
 h1,
 .h1 {
   font-weight: bold;
-  @include fluid-type(font-size, 320px, 1200px, 24px, 40px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 24px, 36px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h2,
 .h2 {
   font-weight: bold;
-  @include fluid-type(font-size, 320px, 1200px, 22px, 36px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 22px, 32px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h3,
 .h3 {
-  font-weight: bold;
-  @include fluid-type(font-size, 320px, 1200px, 20px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  font-weight: 500;
+  @include fluid-type(font-size, 320px, 1200px, 20px, 28px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h4,
@@ -62,7 +62,7 @@ h6,
 }
 
 p {
-  @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 16px, 22px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 ol,
@@ -72,6 +72,10 @@ ul {
   .popover &:last-child {
     margin-bottom: 0;
   }
+}
+
+img {
+  margin-bottom: 0.5em;
 }
 
 figure {
@@ -770,7 +774,7 @@ nav.tabs {
 
 .block-social-sharing-block {
   position: fixed;
-  top: 80px;
+  top: 0;
   right: -302px;
   left: unset;
   padding: 1em;
@@ -780,6 +784,13 @@ nav.tabs {
   width: 302px;
   transition: 0.5s;
   z-index: 5;
+
+  body.toolbar-horizontal & {
+    top: 40px;
+  }
+  body.toolbar-horizontal.toolbar-tray-open & {
+    top: 80px;
+  }
 
   .social-media-sharing>ul {
     margin: 0;

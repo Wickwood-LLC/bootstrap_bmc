@@ -22,7 +22,7 @@ body {
 
 html,
 body {
-  @include fluid-type(font-size, 320px, 1200px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  @include fluid-type(font-size, 320px, 1200px, 16px, 22px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
 h1,

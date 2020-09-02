@@ -8385,7 +8385,7 @@ nav.tabs {
   width: 205px;
   left: -205px;
   z-index: 50;
-  transition: all 0.5s;
+  transition: left 0.5s;
   padding: 0.5em 1em;
 }
 
